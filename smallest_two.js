@@ -15,5 +15,5 @@ function smallestElements(array){
   console.log("smallest: " + smallest + ", second smallest: " + secondSmallest);
 } //end function
 
-var array = [1,5,6,2,6,7,3,6,3]
+var array = [2,5,6,2,6,7,3,6,3,1]
 smallestElements(array);
