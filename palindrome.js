@@ -1,3 +1,5 @@
+//without library functions
+
 function isPalidrome(myString){
   var counter = 0;
   for (i=0; i<(myString.length/2); i++){
@@ -14,3 +16,6 @@ function isPalidrome(myString){
 }//end function
 
 isPalidrome("anna");
+
+//else with library functions: 
+// split string, reverse, join, check if reverse string is same as original.

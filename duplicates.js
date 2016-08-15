@@ -44,19 +44,21 @@ function duplicate(array){
 
 function duplicateHash(array){
   var myMap = new Map();
-  var min = 1000;
+  var min = -1;
   for (i=0; i<array.length; i++){
     if(myMap.has(array[i]) == false) {
       myMap.set(array[i],i);
     } else {
-      if(myMap.get(array[i]) < min)
+      if (min == -1) {
         min = myMap.get(array[i]);
-        break;
+      } else if (myMap.get(array[i]) < min) {
+          min = myMap.get(array[i]);
+      }
     }
   }
     console.log('pos: ', min);
 }
 
 
-var array = ["e", "n", "a", "a", "k", "e"]
+var array = ["e", "n", "a", "a", "k", "e"];
 duplicateHash(array)

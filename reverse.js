@@ -9,4 +9,28 @@ function reverseString(myString){
   return newString;
 }
 
-reverseString("Enakshi")
+// reverseString("Enakshi")
+
+//recursive solution
+// strings not mutable
+
+function recursiveReverse(myString, newString, i){
+  if (i < 0) {
+    return newString;
+  }
+
+  newString += myString[i];
+  //console.log(newString);
+  recursiveReverse(myString, newString, --i);
+}
+
+
+function helper(myString){
+  var newString = "";
+  var i = myString.length-1;
+  recursiveReverse(myString, newString, i);
+  return newString;
+}
+
+var newString = helper("Enakshi");
+console.log(newString);
