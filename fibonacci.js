@@ -12,3 +12,16 @@ function fib(i){
 }
 
 console.log(fib(6));
+
+
+function fibonacci(i){
+  var array = [0, 1];
+  var j = 0;
+  while (j < i){
+    array.push(array[j] + array[(j+1)]);
+    j++;
+  }
+  console.log(array);
+}
+
+fibonacci(6);
