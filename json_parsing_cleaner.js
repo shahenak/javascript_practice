@@ -231,7 +231,7 @@ function printArr(myMap){
     if (results[0].transaction_type == "BUY"){
       console.log(sorted[i] + " We bought " + count + " asset(s) for you");
       for (var j=0; j < results.length; j++){
-        console.log("Bought " + results[j].quantity + " share(s) of " +                         results[j].symbol + " at " + results[j].price + "/share");
+        console.log("Bought " + results[j].quantity + " share(s) of " + results[j].symbol + " at " + results[j].price + "/share");
         count++;
 
       }
